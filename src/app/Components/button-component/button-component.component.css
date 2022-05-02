@@ -1,0 +1,20 @@
+.button{
+    border-radius: 20px;
+}
+
+.add-new{
+    background-color: #6200ee;
+    color: beige;
+}
+.send{
+    background-color: #03dac5;
+}
+.clear {
+    background-color: #6200ee;
+    color: beige; 
+}
+
+.iconStyle{
+    font-size:1.2rem;
+    display: inline;
+}

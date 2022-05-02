@@ -1,0 +1,32 @@
+<div>
+  <header style="padding-bottom: 10px;">
+   <mat-hint style="font-weight: 500;"> Chat Window </mat-hint>
+  </header>
+
+  <mat-card class="listCard">
+
+    <mat-list role="list" *ngIf="messageArr.length">
+      <mat-list-item *ngFor="let eachMessage of messageArr, let i = index" class="listItem" role="listitem">
+        <mat-icon style="font-size: 1.3rem;">{{iconName}}</mat-icon>
+
+        <section class="listContent">
+          <label style="font-size: small;">{{eachMessage.sender}}</label>
+          <div style="padding-bottom: 10px;">
+            <mat-hint style="font-size: small;"> {{eachMessage.message}}</mat-hint>
+          </div>
+          <mat-divider></mat-divider>
+        </section>
+      </mat-list-item>
+    </mat-list>
+    <div *ngIf="messageArr.length === 0">
+      <h4 style="color:rgb(194, 13, 13)">Type something in the chat box to see messages up here !!!</h4>
+    </div>
+
+    <mat-card-actions align="end">
+      <app-button-component [icon]="'close'" [label]="'CLEAR CHAT WINDOW'" [buttonStyle]="'clear'" 
+      (click)="clearChat()" [disabled]="!messageArr.length">
+      </app-button-component>
+    </mat-card-actions>
+
+  </mat-card>
+</div>

@@ -1,0 +1,23 @@
+.listCard{
+    height:35rem!important;
+    justify-content: space-between;
+    display:flex;
+    flex-direction:column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow-y: auto;
+}
+
+.listItem{
+    height: max-content!important;
+    margin-bottom: 10px!important;
+}
+
+.listContent{
+   display:flex;
+   flex-direction: column;
+   margin-left: 12px;
+   position: relative; 
+   top: 0;
+   width:100%;
+}
+

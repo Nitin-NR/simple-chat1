@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px) {
+    .messagecard {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-shadow: none;
+        width: 18rem !important;
+        padding: 0;
+    }
+    .textArea {
+        height: 5rem;
+    }
+    .personForm {
+        width: 100% !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    :host ::ng-deep .mat-form-field-wrapper {
+        margin: 0 !important;
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .messagecard {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: none;
+        padding: 0;
+    }
+    .textArea {
+        height: 2rem;
+    }
+    .personForm {
+        margin-right: 2rem;
+    }
+}
+
+.buttonRow {
+    padding-right: 10px;
+}

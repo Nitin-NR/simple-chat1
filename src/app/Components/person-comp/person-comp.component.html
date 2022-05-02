@@ -1,0 +1,16 @@
+<mat-card class="messagecard">
+  
+    <form [formGroup]="personForm">
+        <mat-form-field class="personForm" appearance="outline">
+            <mat-label>{{inputTitle}}</mat-label>
+            <textarea matInput placeholder="Enter your message here..." formControlName="message"
+                class="textArea"></textarea>
+        </mat-form-field>
+    </form>
+
+    <mat-card-actions align="end" class="buttonRow">
+        <app-button-component [label]="'SEND'" (click)="sendMessage()" [icon]="'navigate_next'"
+            [disabled]="!personForm.valid" [buttonStyle]="'send'"></app-button-component>
+    </mat-card-actions>
+
+</mat-card>

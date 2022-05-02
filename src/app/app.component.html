@@ -1,0 +1,22 @@
+<div fxLayout="column">
+  <div>
+    <app-toolbar [personArr]="personArr"></app-toolbar>
+    <div style="display: flex;justify-content: center;">
+      <mat-divider></mat-divider>
+    </div>
+  </div>
+ 
+
+  <div fxLayout="row wrap" class="app-root">
+    <div fxFlex="60">
+      <div class="person-grid-container">
+        <app-person-comp *ngFor="let item of personArr, let i = index" [index]="i" class="personComp"></app-person-comp>
+      </div>
+    </div>
+    
+    <div fxFlex.gt-md="30" fxFlex.sm="100">
+      <app-list-comp></app-list-comp>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,12 @@
+<mat-toolbar  fxLayout="row wrap"  class="toolbar">
+    <div fxFlex.gt-md="85" fxFlex.sm="100">
+      <em class="subtitle">{{navSubTitle}}</em> <br />
+      <mat-hint class="title">{{navTitle}}</mat-hint>
+    </div>
+
+    <div fxFlex.gt-md="10" fxFlex.sm="100" style="padding-left: 2%;display: flex;flex-direction: column;height: 3.5rem; align-self: flex-end;">
+      <app-button-component [label]="navButtontitle" (click)="addFunction()" [icon]="'add'" [disabled]="personArr.length>=9" [buttonStyle]="'add-new'">
+      </app-button-component>
+      <mat-hint style="font-size:12px;color: red;" *ngIf="personArr.length===9">Maximum user limit reached!!</mat-hint>
+    </div>
+</mat-toolbar>

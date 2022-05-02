@@ -1,0 +1,34 @@
+@media screen and (min-width: 992px) {
+    .toolbar {
+        background-color: rgb(255, 255, 255);
+        margin: 1% 0 1% 0%;
+        padding-left: 2rem !important;
+    }
+
+    .toolbarButtonGroup {
+        padding-left: 2%;
+        display: flex;
+        flex-direction: column;
+        height: 3.5rem;
+        align-self: flex-end;
+    }
+
+    .title {
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: black
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .toolbar {
+        background-color: white;
+        margin: 1% 2% 6% 2%;
+        height: max-content;
+    }
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
